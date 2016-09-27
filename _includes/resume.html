@@ -1,0 +1,60 @@
+<section id="resume" class="resume-section section-padding">
+    <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resume-title">
+                    <h3>Education</h3>
+                </div>
+                <div class="resume">
+                    <ul class="timeline">
+                        {% assign posts = (site.categories.education | sort: 'order') %}
+                        {% for post in posts %}
+                        <li class="{{ post.class }}">
+                            <div class="timeline-badge primary">
+                                <a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a>
+                            </div>
+                            <div class="timeline-panel">                    
+                                <div class="timeline-header">
+                                    <div class="row" style="margin-left: 0px">
+                                        <div class="col-md-2 col-sm-3 hidden-xs text-center vcenter">
+                                            <img class="logo" src="{{ post.image_path }}" />
+                                        </div>
+                                        <div class="col-md-10 col-sm-9">
+                                            <h3>{{ post.title }}</h3>
+                                            <span><b>Master's Integrated (Bachelor plus Master degree)</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <div>
+                                        <span>This course aims to offer a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role. That wide range of options includes computer archicture, telecommunications, computer vision, data analysis, services, security, distributed systems and so on.</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-footer">
+                                    <b><span>{{ post.location }}</span>
+                                    <span class="pull-right">{{ post.date_string }}</span></b>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        <li class="clearfix" style="float: none;"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resume-title">
+                    <h3>Experience</h3>
+                </div>
+                <div class="resume">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /.container -->
+</section>
