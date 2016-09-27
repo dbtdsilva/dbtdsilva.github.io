@@ -733,11 +733,11 @@ Resume Timeline
 .timeline > li > .timeline-panel {
   width: 95%;
   float: left;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #c4c4c4;
   /*border-radius: 2px;*/
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.225);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.225);
 }
 
 .timeline > li > .timeline-panel:before {
@@ -746,8 +746,8 @@ Resume Timeline
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
+  border-left: 15px solid #bbb;
+  border-right: 0 solid #bbb;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -815,8 +815,9 @@ Resume Timeline
   margin: 0px 20px;
 }
 .timeline-footer{
-    padding:10px;
-    background-color:#f4f4f4;
+  margin-top: 10px;
+  padding: 5px 20px 10px 20px;
+  background-color:#f2f2f2;
 }
 .timeline-footer > a{
     cursor: pointer;
