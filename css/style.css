@@ -908,8 +908,8 @@ Resume Timeline
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.timeline > li:nth-child(3){
-  margin-top: 20px;
+.timeline > li:nth-child(4){
+  margin-top: 25px;
 }
 .timeline > li.timeline-inverted > .timeline-badge{
   left: -12px;
