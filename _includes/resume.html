@@ -15,7 +15,10 @@
                         {% for post in posts %}
                         <li class="{{ post.class }}">
                             <div class="timeline-badge primary">
-                                <a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a>
+                                <a>
+                                    <i class="glyphicon glyphicon-record" rel="tooltip" title="{{ post.date_string }}" id="">
+                                    </i>
+                                </a>
                             </div>
                             <div class="timeline-panel">                    
                                 <div class="timeline-header">
