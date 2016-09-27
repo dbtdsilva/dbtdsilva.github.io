@@ -4,17 +4,29 @@
   {% include head.html %}
 
   <body>
+    <div id="tt-preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
 
+    {% include home.html %}
     {% include header.html %}
+    {% include about.html %}
+    {% include wordcloud.html %}
+    {% include resume.html %}
+    {% include academical-works.html %}
+    {% include additional.html %}
+    {% include contact.html %}
 
-    <main class="page-content" aria-label="Content">
+    <!--<main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
-    </main>
+    </main>-->
 
     {% include footer.html %}
-
+    {% include footer-scripts.html %}
   </body>
 
 </html>

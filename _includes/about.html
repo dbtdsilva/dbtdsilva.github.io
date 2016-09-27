@@ -1,0 +1,31 @@
+<section id="about" class="about-section section-padding">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">
+                <div class="biography">
+                    <div class="biography-image">
+                        <img src="images/myphoto.jpg" alt="" class="img" style="border-radius: 20px">
+                    </div>
+                    <ul>
+                        <li><strong>Name: </strong>{{ site.data.me.name }}</li>
+                        <li><strong>Date of birth: </strong>{{ site.data.me.date_of_birth }}</li>
+                        <li><strong>Nationality: </strong>{{ site.data.me.nationality }}</li>
+                        <li><strong>Phone: </strong>{% include phone.html %}</li>
+                        <li><strong>Email: </strong>{% include email.html %}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- col-md-4 -->
+            <div class="col-md-8 col-md-pull-4">
+                <div class="short-info">
+                    <h3>Objective</h3>
+                    <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+                    Besides the academic experience I have been accepted for two research scholarship (I didn’t consider them as professional experience either) which are described in “Developed Projects” section. I’m on my last year studying Computers and Telematics Engineering in the University of Aveiro. Until now I had the opportunity to acquire technical skills in programming (C, C++, Java, MATLAB, MIPS Assembly, Python, C#), network engineering (Security, Cisco solutions, TCP/IP, IPV6, OSPF, switching, routing protocols and wireless), web programming, distributed systems (using RMI and messages models), etc. Those academic projects allowed to implement skills in Operating Systems (Linux and Windows) in order to fulfill the best solution to the technical problems that were identified. The most important is not the technologies that I have learnt, but the way that I have used them. I have learnt to design solutions for several problems (network, distributed, computer architecture, client server models, M2M).
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
