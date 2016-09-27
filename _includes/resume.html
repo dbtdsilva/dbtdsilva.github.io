@@ -1,14 +1,17 @@
 <section id="resume" class="resume-section section-padding">
     <div class="container">
         <h2 class="section-title">Resume</h2>
+        
+        {% for item in site.categories %}
+        {% assign category = item[0] %}
         <div class="row">
             <div class="col-md-12">
                 <div class="resume-title">
-                    <h3>Education</h3>
+                    <h3>{{ category }}</h3>
                 </div>
                 <div class="resume">
                     <ul class="timeline">
-                        {% assign posts = (site.categories.education | sort: 'order') %}
+                        {% assign posts = (site.categories.[category] | sort: 'order') %}
                         {% for post in posts %}
                         <li class="{{ post.class }}">
                             <div class="timeline-badge primary">
@@ -22,13 +25,14 @@
                                         </div>
                                         <div class="col-md-10 col-sm-9">
                                             <h3>{{ post.title }}</h3>
-                                            <span><b>Master's Integrated (Bachelor plus Master degree)</b></span>
+                                            <span><b>{{ post.subtitle }} </b></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="timeline-body">
                                     <div>
-                                        <span>This course aims to offer a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role. That wide range of options includes computer archicture, telecommunications, computer vision, data analysis, services, security, distributed systems and so on.</span>
+                                        <div class='text-center'><b>{{ post.subsubtitle }}</b></div>
+                                        <span>{{ post.description }}</span>
                                     </div>
                                 </div>
                                 <div class="timeline-footer">
@@ -43,18 +47,7 @@
                 </div>
             </div>
         </div>
-        <!-- /row -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="resume-title">
-                    <h3>Experience</h3>
-                </div>
-                <div class="resume">
-                    
-                </div>
-            </div>
-        </div>
-        <!-- /row -->
+        {% endfor %}
     </div>
     <!-- /.container -->
 </section>
