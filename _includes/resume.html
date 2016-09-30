@@ -1,12 +1,8 @@
 <section id="resume" class="resume-section section-padding">
     <div class="container">
         <h2 class="section-title">Resume</h2>
-        
-        {% for item in site.categories %}
-        {% assign category = item[0] %}
-        {% if category != 'experience' and category != 'education' %}
-            {% continue %}
-        {% endif %}
+        {% for cat_item in site.data.resume %}
+        {% assign category = cat_item[0] %}
         <div class="row">
             <div class="col-md-12">
                 <div class="resume-title">
@@ -14,8 +10,9 @@
                 </div>
                 <div class="resume">
                     <ul class="timeline">
-                        {% assign posts = (site.categories.[category] | sort: 'order') %}
-                        {% for post in posts %}
+                        {% assign posts = site.data.resume.[category] | sort %}
+                        {% for post_obj in posts reversed %}
+                        {% assign post = post_obj[1] %}
                         <li class="{{ post.class }}">
                             <div class="timeline-badge primary">
                                 <a>
