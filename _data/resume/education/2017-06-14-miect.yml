@@ -6,6 +6,6 @@ date: 2017-06-14 00:00:00 +0100
 categories: ["education"]
 class: ""
 description: "This course aims to offer a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role. That wide range of options includes computer archicture, telecommunications, computer vision, data analysis, services, security, distributed systems and so on."
-image_path: "images/work/ua_logo.png"
+image_path: "assets/images/work/ua_logo.png"
 location: "<a href='http://www.ua.pt/' target='_blank'>University of Aveiro, Portugal</a>"
 date_string: "2014 - 2017"
