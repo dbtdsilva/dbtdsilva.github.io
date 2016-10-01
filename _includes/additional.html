@@ -22,17 +22,38 @@
                 <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "{{category}}" ]'>
                     <div class="portfolio-bg">
                         <div class="portfolio">
-                            <div class="tt-overlay"></div>
-                            <div class="links">
-                                <a class="image-link" href="images/works/portfolio-1.jpg"><i class="fa fa-search-plus"></i></a>
-                                <a href="#"><i class="fa fa-link"></i></a>
+                            <div class="tt-overlay">
                             </div>
-                            <img src="images/works/portfolio-1.jpg" alt="image">
-                            <div class="portfolio-info">
-                                <h3>{{ post.title }}</h3>
+                            <div class="links">
+                                <a class="image-link" href="#myModal">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <img src="images/portfolio/ieeextreme.png" alt="image">
+                            <div class="portfolio-info text-left">
+                                <h3><span>{{ post.title }}</span></h3>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="mfp-hide" id="myModal">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="mfp-close">&times;</button>
+                            <h4 class="modal-title text-center">{{ post.title }}</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>{{ post.content }}</p>
+                          </div>
+                          <div class="modal-footer">
+                            {{ post.footer }}
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
                 </div>
                 {% endfor %}
             </div>
