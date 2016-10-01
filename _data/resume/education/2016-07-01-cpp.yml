@@ -6,6 +6,6 @@ date: 2016-07-01 00:00:00 +0100
 categories: ["education"]
 class: "timeline-inverted"
 description: "I have decided to enroll for this course to remember particular details that I have learnt before and improve my knowledge in C++. This course covers template classes, operator overloading, lambda expressions, right references and C++11 features."
-image_path: "images/work/udemy_logo.png"
+image_path: "assets/images/work/udemy_logo.png"
 location: "<a href='https://www.udemy.com/learn-advanced-c-programming/' target='_blank'>Udemy</a>"
 date_string: "June 2016 - July 2016"
