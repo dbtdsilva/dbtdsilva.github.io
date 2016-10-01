@@ -14,7 +14,9 @@
         </ul>
         <div class="row">
             <div id="grid">
+                {% assign posts_count = 0 %}
                 {% for post in site.posts %}
+                {% assign posts_count = posts_count | plus: 1 %}
                 {% assign category = post.categories[0] %}
                     {% if category != 'volunteering' and category != 'competition' and category != 'academical_work' %}
                         {% continue %}
@@ -25,7 +27,7 @@
                             <div class="tt-overlay">
                             </div>
                             <div class="links">
-                                <a class="image-link" href="#myModal">
+                                <a class="image-link" href="#modal{{ posts_count }}">
                                     <i class="fa fa-search-plus"></i>
                                 </a>
                                 <a href="#">
@@ -39,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mfp-hide" id="myModal">
+                <div class="mfp-hide" id="modal{{ posts_count }}">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
