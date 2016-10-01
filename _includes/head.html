@@ -14,12 +14,14 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
   
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="css/magnific-popup.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="css/responsive.css" rel="stylesheet">
+  {% css animate %}
+  {% css bootstrap %}
+  {% css bootstrap-theme %}
+  {% css font-awesome %}
+  {% css magnific-popup %}
+  {% css responsive %}
+  {% css style %}
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
