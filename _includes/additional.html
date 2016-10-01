@@ -7,22 +7,18 @@
             <li><a class="active" data-group="all">All</a></li>
             {% for item in site.categories %}
             {% assign category = item[0] %}
-                {% if category != 'volunteering' and category != 'competition' and category != 'academical_work' %}
-                    {% continue %}
-                {% endif %}
                 <li><a data-group="{{ category }}">{{ category | replace:'_',' ' }}</a></li>
             {% endfor %}
         </ul>
+
         <div class="row">
             <div id="grid">
                 {% assign posts_count = 0 %}
-                {% for post in site.posts %}
+                {% assign posts_obj = (site.posts | sort: 'order') %}
+                {% for post in posts_obj %}
                 {% assign posts_count = posts_count | plus: 1 %}
                 {% assign category = post.categories[0] %}
-                    {% if category != 'volunteering' and category != 'competition' and category != 'academical_work' %}
-                        {% continue %}
-                    {% endif %}
-                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "{{category}}" ]'>
+                <div class="portfolio-item col-xs-6 col-sm-4 col-md-3" data-groups='["all", "{{category}}" ]'>
                     <div class="portfolio-bg">
                         <div class="portfolio">
                             <div class="tt-overlay">
@@ -36,7 +32,7 @@
                                 </a>
                             </div>
                             <img src="{{ post.image }}" alt="image">
-                            <div class="portfolio-info text-left">
+                            <div class="portfolio-info">
                                 <h3><span>{{ post.title }}</span></h3>
                             </div>
                         </div>
