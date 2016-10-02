@@ -1,53 +1,60 @@
 <section id="contact" class="contact-section section-padding">
     <div class="container">
         <h2 class="section-title">Get in touch</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="contact-form">
-                    <strong>Send me a message</strong>
-                    <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" class="form-control" id="name" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" name="subject" class="form-control" id="subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+
+        <h4 class="text-center">Feel free to contact me using one of the following options</h4><br/>
+        <div class="row center-xs">
+            <div class="col-sm-6 contact-panel text-right">
+                <i class="fa fa-envelope-o"></i>
+                <div class="contact-info">
+                    <h4>Email address</h4>
+                    {% include email.html %}
                 </div>
-                <!-- /.contact-form -->
             </div>
-            <!-- /.col-md-6 -->
-            <div class="col-md-6">
-                <div class="row center-xs">
-                    <div class="col-sm-6">
-                        <i class="fa fa-map-marker"></i>
-                        <address>
-                            <strong>Address/Street</strong> 239/2 Awesome Street,
-                            <br> Boston, USA
-                            <br>
-                        </address>
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="fa fa-mobile"></i>
-                        <div class="contact-number">
-                            <strong>Phone Number</strong> (001) 0123 111222
-                            <br> (001) 0123 333444
-                        </div>
-                    </div>
+            <div class="col-sm-6 contact-panel" >
+                <i class="fa fa-mobile"></i>
+                <div class="contact-info">
+                    <h4>Phone Number</h4>
+                    {% include phone.html %}
                 </div>
-                <div class="row">
+            </div>
+
+            <div class="col-sm-6 contact-panel text-right">
+                <i class="fa fa-linkedin-square" style="color:#007bb5"></i>
+                <div class="contact-info">
+                    <h4>LinkedIn</h4>
+                    <a target="_blank" href="https://linkedin.com/in/dbtdsilva">linkedin.com/in/dbtdsilva</a>
                 </div>
+            </div>
+
+            <div class="col-sm-6 contact-panel">
+                <i class="fa fa-github"></i>
+                <div class="contact-info">
+                    <h4>GitHub</h4>
+                    <a target="_blank" href="https://github.com/dbtdsilva">github.com/dbtdsilva</a>
+                </div>
+            </div>
+            <div class="col-sm-6 contact-panel text-right">
+                <i class="fa fa-facebook" style="color:#3b5998"></i>
+                <div class="contact-info">
+                    <h4>Facebook</h4>
+                    <a target="_blank" href="https://www.facebook.com/dbtdsilva">facebook.com/dbtdsilva</a>
+                </div>
+            </div>
+            <div class="col-sm-6 contact-panel">
+                <i class="fa fa-google-plus" style="color:#d34836"></i></i>
+                <div class="contact-info">
+                    <h4>Google+</h4>
+                    <a target="_blank" href="https://plus.google.com/102263571822372794440">plus.google.com/102263571822372794440</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-panel text-center">
+            <i class="fa fa-rss" style="color:#ff6600"></i>
+            <div class="contact-info">
+                <h4>Feed RSS</h4>
+                <span>Feel free to watch the most recent posts closely</span><br/>
+                <a target="_blank" href="http://localhost:4000/feed.xml">dsilva.pt/feed.xml</a>
             </div>
         </div>
         <!-- /.row -->
