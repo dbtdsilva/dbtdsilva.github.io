@@ -522,9 +522,13 @@ SOCIAL ICON
     font-weight: 700;
 }
 
+.navbar-custom .nav li a:focus {
+  background: none;
+  outline: 0;
+}
+
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
