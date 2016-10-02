@@ -137,7 +137,6 @@ h6 {
 
 /* === FORM STYLE === */
 .form-control {
-    height: 45px;
     background-color: #f7f7f7;
     border: 1px solid #e8e8e8;
     border-radius: 0;
@@ -1477,16 +1476,17 @@ Icon for all respective meta
 }
 
 .contact-section div > i{
-    float: left;
     font-size: 45px;
-    margin-right: 20px;
 }
-.contact-section address,
-.contact-section .contact-number {
+
+.contact-section .contact-panel {
+    margin-bottom: 20px;
+}
+.contact-section .concact-info {
     overflow: hidden;
     line-height: 30px;
     font-weight: 400;
-    margin-bottom: 45px
+    margin-bottom: 45px;
 }
 
 
