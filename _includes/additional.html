@@ -1,23 +1,18 @@
 <section id="additional" class="dark-section section-padding">
     <div class="container">
         <h2 class="section-title">Additional</h2>
-        <span>I have decided to show off some work that I have done during my classes.</span><br/><br/>
-
+        <span>I have decided to show off some work that I have done during my classes.</span>
+        <br/>
+        <br/>
         <ul class="list-inline" id="filter">
             <li><a class="active" data-group="all">All</a></li>
-            {% for item in site.categories %}
-            {% assign category = item[0] %}
-                <li><a data-group="{{ category }}">{{ category | replace:'_',' ' }}</a></li>
+            {% for item in site.categories %} {% assign category = item[0] %}
+            <li><a data-group="{{ category }}">{{ category | replace:'_',' ' }}</a></li>
             {% endfor %}
         </ul>
-
         <div class="row">
             <div id="grid">
-                {% assign posts_count = 0 %}
-                {% assign posts_obj = (site.posts | sort: 'order') %}
-                {% for post in posts_obj %}
-                {% assign posts_count = posts_count | plus: 1 %}
-                {% assign category = post.categories[0] %}
+                {% assign posts_count = 0 %} {% assign posts_obj = (site.posts | sort: 'order') %} {% for post in posts_obj %} {% assign posts_count = posts_count | plus: 1 %} {% assign category = post.categories[0] %}
                 <div class="portfolio-item col-xs-6 col-sm-4 col-md-3" data-groups='["all", "{{category}}" ]'>
                     <div class="portfolio-bg">
                         <div class="portfolio">
@@ -39,20 +34,22 @@
                     </div>
                 </div>
                 <div class="mfp-hide" id="modal{{ posts_count }}">
-                      <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="mfp-close">&times;</button>
-                            <h4 class="modal-title text-center">{{ post.title }}</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>{{ post.content }}</p>
-                          </div>
-                          <div class="modal-footer">
-                            {{ post.footer }}
-                          </div>
-                        </div><!-- /.modal-content -->
-                      </div><!-- /.modal-dialog -->
+                            <div class="modal-header">
+                                <button type="button" class="mfp-close">&times;</button>
+                                <h4 class="modal-title text-center">{{ post.title }}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>{{ post.content }}</p>
+                            </div>
+                            <div class="modal-footer">
+                                {{ post.footer }}
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
                 </div>
                 {% endfor %}
             </div>
