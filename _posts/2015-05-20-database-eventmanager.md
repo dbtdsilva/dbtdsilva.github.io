@@ -2,7 +2,6 @@
 title: "Database Event Manager"
 categories: academical_work
 image: "assets/images/portfolio/eventmanager.png"
-order: 12
 ---
 
 This project was created to show everything that we have learnt in a university class related with databases.
