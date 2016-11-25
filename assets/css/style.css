@@ -62,7 +62,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 /* Transition elsements
 -------------------------------------------------------- */
 .navbar a,
@@ -985,6 +984,10 @@ Resume Timeline
     background-color: #1a1e23;
     color: #fff;   
 }
+.dark-section a:hover,
+.dark-section a:focus {
+    color: #bbbbbb;
+}
 .dark-section .section-title{
     color: #fff;
 }
@@ -1816,4 +1819,18 @@ Icon for all respective meta
 
 .box-padding {
   padding: 10px 20px;
+}
+
+.modal-content {
+    line-height: 20px;
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6 {
+    text-align: center;
+    margin: 15px 0px;
 }
