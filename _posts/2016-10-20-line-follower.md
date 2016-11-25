@@ -9,7 +9,7 @@ post_url: https://github.com/dbtdsilva/robot-naga-simulated/tree/master/line_fol
 
 This project was **developed an agent for a robot with the objective of following a black line**, that robot runs using a PIC32 which runs with low resources.
 
-Moreoever, it consited in developing an autonomous agent, which is a system that tries to understand the environment using sensors and acts according with it using actuators. This agent will have to follow a line and pass several challenges, such as, deal with tight curves, interrupted track, obstacles, etc.
+Moreover, it consisted in developing an autonomous agent, which is a system that tries to understand the environment using sensors and acts according with it using actuators. This agent will have to follow a line and pass several challenges, such as, deal with tight curves, interrupted track, obstacles, etc.
 
 The follow image shows an example of what the robot has to deal with.
 
