@@ -11,8 +11,8 @@ This project, SOFS, is a simple and limited file system based on Linux's ext2 fi
 > FUSE (File system in User SpacE) is a very ingenious alternative solution that aims to build file systems in the user space, as if they were mere applications, preventing any inconsistencies and errors that arise in its implementation. This means that those errors will not be transmitted directly to the kernel and lead to its inoperability.
 >
 > The infrastructure offered is made up of two main parts:
-> • file system interface module - acts as the communications mediator between the uniform interface of file operations provided by the Kernel and its implementation in user space;
-> • implementation library - provides the communication data structures and the prototype of operations that have to be developed to ensure compatibility User-defined data type with the underlying model; It also provides a set of functionalities designed to instantiate the type of Data on a mass storage device and its integration into the operating system."
+> 1. File system interface module - acts as the communications mediator between the uniform interface of file operations provided by the Kernel and its implementation in user space;
+> 2. Implementation library - provides the communication data structures and the prototype of operations that have to be developed to ensure compatibility User-defined data type with the underlying model; It also provides a set of functionalities designed to instantiate the type of Data on a mass storage device and its integration into the operating system."
 
 The idea of this project was to **understand how a filesystem works and can be modified/created.**
 
