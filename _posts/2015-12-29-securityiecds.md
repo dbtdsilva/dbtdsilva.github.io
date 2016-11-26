@@ -2,6 +2,7 @@
 title: "Security IECDS"
 categories: academical_work
 image: "assets/images/portfolio/security-iecds.png"
+post_url: https://github.com/dbtdsilva/security-iecds-drm
 ---
 
 **This project consists in creating a DRM (Digital rights management) that controls the user access in order to restrict the usage of copyrighted works. In this case, piracy of digital content.**
