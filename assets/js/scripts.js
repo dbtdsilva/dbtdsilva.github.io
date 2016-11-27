@@ -147,11 +147,25 @@ jQuery(function($) {
 
     });
 
+function getScrollBarWidth () {
+    var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
+        widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
+    $outer.remove();
+    return 100 - widthWithScroll;
+};
     // Inline popups
     $('#grid').magnificPopup({
         delegate: 'a.modal-link',
         removalDelay: 250, //delay removal by X to allow out-animation
         callbacks: {
+            open: function() { 
+                $('.scroll-up').css('padding-right', getScrollBarWidth() + "px"); 
+                $('header').css('padding-right', getScrollBarWidth() + "px"); 
+            }, 
+            close: function() { 
+                $('.scroll-up').css('padding-right', 0); 
+                $('header').css('padding-right', 0); 
+            },
             beforeOpen: function() {
                 this.st.mainClass = this.st.el.attr('data-effect');
             }
