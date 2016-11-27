@@ -1260,28 +1260,55 @@ Resume Timeline
     line-height: 25px;
 }
 
-/*PopUp fade effect*/
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
-  transition: all 0.3s ease-out;
+.modal-custom {
+  position: relative;
+  background: #FFF;
+  padding: 10px;
+  width: auto;
+  margin: 0 auto; 
 }
 
-.mfp-with-zoom.mfp-ready .mfp-container {
-    opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-    opacity: 0.8;
+.modal-custom {
+    line-height: 20px;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
+.modal-custom h1,
+.modal-custom h2,
+.modal-custom h3,
+.modal-custom h4,
+.modal-custom h5,
+.modal-custom h6 {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.modal-custom ol,
+.modal-custom ul {
+    margin: inherit;
+    padding: inherit;
+}
+
+.modal-custom ol {
+    list-style-type: decimal;
+}
+
+.modal-custom ul {
+    list-style: inherit;
+}
+
+@media (min-width: 768px) {
+  .modal-custom {
+    width: 700px;
+    margin: 30px auto;
+  }
+  .modal-custom-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-custom-lg {
+    width: 900px;
+  }
 }
 
 .tt-overlay-bg {
@@ -1819,32 +1846,4 @@ Icon for all respective meta
 
 .box-padding {
   padding: 10px 20px;
-}
-
-.modal-content {
-    line-height: 20px;
-}
-
-.modal-content h1,
-.modal-content h2,
-.modal-content h3,
-.modal-content h4,
-.modal-content h5,
-.modal-content h6 {
-    text-align: center;
-    margin: 15px 0px;
-}
-
-.modal-content ol,
-.modal-content ul {
-    margin: inherit;
-    padding: inherit;
-}
-
-.modal-content ol {
-    list-style-type: decimal;
-}
-
-.modal-content ul {
-    list-style: inherit;
 }
