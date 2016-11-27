@@ -317,21 +317,21 @@ MagnificPopup.prototype = {
         var windowStyles = {};
 
         if( mfp.fixedContentPos ) {
-            if(mfp._hasScrollBar(windowHeight)){
+            /*if(mfp._hasScrollBar(windowHeight)){
                 var s = mfp._getScrollbarSize();
                 if(s) {
                     windowStyles.marginRight = s;
                 }
-            }
+            }*/
         }
 
         if(mfp.fixedContentPos) {
-            if(!mfp.isIE7) {
+            /*if(!mfp.isIE7) {
                 windowStyles.overflow = 'hidden';
             } else {
                 // ie7 double-scroll bug
                 $('body, html').css('overflow', 'hidden');
-            }
+            }*/
         }
 
         
