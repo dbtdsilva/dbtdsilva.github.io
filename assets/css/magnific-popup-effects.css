@@ -1,11 +1,3 @@
-====== Zoom effect ======
-
-*/
-.mfp-zoom-in {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
 .mfp-zoom-in .mfp-with-anim {
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -30,16 +22,6 @@
   opacity: 0;
 }
 
-/* 
-
-====== Newspaper effect ======
-
-*/
-.mfp-newspaper {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
 .mfp-newspaper .mfp-with-anim {
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
@@ -64,17 +46,6 @@
 .mfp-newspaper.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-/* 
-
-====== Move-horizontal effect ======
-
-*/
-.mfp-move-horizontal {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
 .mfp-move-horizontal .mfp-with-anim {
   opacity: 0;
   transition: all 0.3s;
@@ -97,17 +68,6 @@
 }
 .mfp-move-horizontal.mfp-removing.mfp-bg {
   opacity: 0;
-}
-
-/* 
-
-====== Move-from-top effect ======
-
-*/
-.mfp-move-from-top {
-  /* start state */
-  /* animate in */
-  /* animate out */
 }
 .mfp-move-from-top .mfp-content {
   vertical-align: top;
@@ -134,17 +94,6 @@
 }
 .mfp-move-from-top.mfp-removing.mfp-bg {
   opacity: 0;
-}
-
-/* 
-
-====== 3d unfold ======
-
-*/
-.mfp-3d-unfold {
-  /* start state */
-  /* animate in */
-  /* animate out */
 }
 .mfp-3d-unfold .mfp-content {
   perspective: 2000px;
@@ -173,17 +122,6 @@
 .mfp-3d-unfold.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-/* 
-
-====== Zoom-out effect ======
-
-*/
-.mfp-zoom-out {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
 .mfp-zoom-out .mfp-with-anim {
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -208,11 +146,6 @@
   opacity: 0;
 }
 
-/* 
-
-====== "Hinge" close effect ======
-
-*/
 @keyframes hinge {
   0% {
     transform: rotate(0);
@@ -244,7 +177,6 @@
   animation-duration: 1s;
   animation-name: hinge;
 }
-
 .mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
   opacity: 0;
   transition: opacity .5s ease-out;

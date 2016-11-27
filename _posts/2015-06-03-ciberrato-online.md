@@ -2,7 +2,7 @@
 title: "CiberRato Online Project"
 categories: academical_work
 image: "assets/images/portfolio/ciberrato-online.png"
-post_url: https://github.com/CiberRato/pei2015-ciberrato.
+post_url: https://github.com/CiberRato/pei2015-ciberrato
 ---
 
 **CiberRato is a competition that happens every year** organized by the Universidade of Aveiro with the objective of **simulating a real environment for robots**.
