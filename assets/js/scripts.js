@@ -149,7 +149,7 @@ jQuery(function($) {
 
     // Inline popups
     $('#grid').magnificPopup({
-        delegate: 'a',
+        delegate: 'a.modal-link',
         removalDelay: 100, //delay removal by X to allow out-animation
         callbacks: {
             beforeOpen: function() {
