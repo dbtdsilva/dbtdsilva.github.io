@@ -2,6 +2,7 @@
 title: "Maze Solver Robotics"
 categories: academical_work
 image: "assets/images/portfolio/maze.png"
+post_url: "https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder"
 ---
 
 **Feel free to check source code at [https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder](https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder)**
