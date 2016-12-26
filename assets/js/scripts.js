@@ -12,10 +12,10 @@ jQuery(function($) {
     'use strict';
 
     /* ---------------------------------------------- /*
-     * Preloader
+     * Preloader (ready/onload)
     /* ---------------------------------------------- */
 
-    $(window).ready(function() {
+    $(window).load(function() {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(300).fadeOut('slow');
     });
