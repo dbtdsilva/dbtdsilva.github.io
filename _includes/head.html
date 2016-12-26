@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{{ site.description | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="keywords" content="onepage, resume, dbtds, dsilva, dbtdsilva, dbtdsilva@gmail.com, ua, Diogo, Silva">
   <meta name="author" content="Diogo Bastos Tavares da Silva">
 
