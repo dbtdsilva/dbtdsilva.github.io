@@ -10,7 +10,7 @@ This project was created because there is a simulator implemented in 2D that out
 
 The **following image contains an example of what is possible to describe in the JSON**. Such as, walls with thickness, target areas, beacons, overlapping was taken into account, robot's pose, maze dimensions and even challenge parameters.
 
-![Bison and Flex Output](assets/images/portfolio/description/bison.png)
+![Bison and Flex Output](){:data-original="assets/images/portfolio/description/bison.png"}
 
 The following example was the **input received by converter for the previous image** (output):
 ~~~~ 
