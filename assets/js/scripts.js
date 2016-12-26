@@ -20,6 +20,22 @@ jQuery(function($) {
         $('#tt-preloader').delay(300).fadeOut('slow');
     });
 
+    /*$(function() {
+        $("img.lazy").lazyload({
+            event : "sporty"
+        });
+    });*/
+
+    $(function() {
+        $("img.lazy").lazyload().lazyload({
+            threshold : 200
+        });
+
+        $(".modal-custom").find('img').lazyload({
+            threshold : 200
+        });
+    });
+
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------

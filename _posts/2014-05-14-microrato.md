@@ -15,5 +15,5 @@ post_url: http://microrato.ua.pt/
 
 **Feel free to visit the homepage of the competition at [http://microrato.ua.pt/](http://microrato.ua.pt/)**
 
-![MicroRato competition](assets/images/portfolio/microrato.png)
+![MicroRato competition](){:data-original="assets/images/portfolio/microrato.png"}
 _This figure shows the robot used and a small portion of the maze._

@@ -23,10 +23,10 @@ The development of the solution was implemented progressively, with two initial 
 
 The following image represents the second solution that was implemented in a breadboard. At first it had an Arduino but it has unnecessary costs because we could only use the Atmega328p which is a lot cheaper.
 
-![Second solution implemented](assets/images/portfolio/description/atmega.jpg)
+![Second solution implemented](){:data-original="assets/images/portfolio/description/atmega.jpg"}
 
 The **final product was implemented on PCB-SMT with SMD components**. Due to lack of time the final solution was only designed and not implemented as you can see in the following image.
 
-![Final solution](assets/images/portfolio/description/pee.jpg)
+![Final solution](){:data-original="assets/images/portfolio/description/pee.jpg"}
 
 We performed a techno-economic analysis of the product and its market implementation and concluded that we were able to meet all proposed goals and that the project is technologically and economically viable.
