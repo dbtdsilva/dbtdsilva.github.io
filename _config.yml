@@ -13,12 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Diogo Silva
+title: Diogo Silva | Resume, Works, Experience
 email: dbtdsilva@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  
+description: This page contains several works and the resume from Diogo Silva who is a final year student pursuing MSc Computer and Telematics Engineering at UA (Portugal)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dsilva.pt" # the base hostname & protocol for your site
+url: "https://www.dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva
 github_username:  dbtdsilva
 phone_number: "+351914388007"
