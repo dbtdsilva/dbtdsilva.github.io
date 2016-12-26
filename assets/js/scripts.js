@@ -8,7 +8,6 @@ Slighty modified..
 
 
 jQuery(function($) {
-
     'use strict';
 
     /* ---------------------------------------------- /*
@@ -20,19 +19,24 @@ jQuery(function($) {
         $('#tt-preloader').delay(300).fadeOut('slow');
     });
 
-    /*$(function() {
-        $("img.lazy").lazyload({
-            event : "sporty"
-        });
-    });*/
+    $(".modal-link").click(function() {
+        var modals = $(".modal-custom");
+        for (var i = 0; i < modals.length; i++) {
+            if (this.href.indexOf(modals[i].id) != -1) {
+                console.log(modals[i].id);
+                console.log($("#" + modals[i].id).find('img'));
+                $("#" + modals[i].id).find('img').trigger("modal-activation");
+            }
+        }
+    });
 
     $(function() {
-        $("img.lazy").lazyload().lazyload({
+        $("img.lazy").lazyload({
             threshold : 200
         });
 
         $(".modal-custom").find('img').lazyload({
-            threshold : 200
+            event : "modal-activation"
         });
     });
 
@@ -163,12 +167,14 @@ jQuery(function($) {
 
     });
 
-function getScrollBarWidth () {
-    var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
-        widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
-    $outer.remove();
-    return 100 - widthWithScroll;
-};
+    function getScrollBarWidth () {
+        var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
+            widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
+        $outer.remove();
+        return 100 - widthWithScroll;
+    };
+
+
     // Inline popups
     $('#grid').magnificPopup({
         delegate: 'a.modal-link',
