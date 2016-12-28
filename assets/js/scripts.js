@@ -32,7 +32,7 @@ jQuery(function($) {
 
     $(function() {
         $("img.lazy").lazyload({
-            threshold : 200
+            threshold : 1250
         });
 
         $(".modal-custom").find('img').lazyload({
