@@ -2,10 +2,10 @@
 title: "Line Follower Robotics"
 categories: academical_work
 image: "assets/images/portfolio/linefollower.png"
-post_url: https://github.com/dbtdsilva/robot-naga-simulated/tree/master/line_follower
+post_url: https://github.com/dbtdsilva/robot-naga/tree/master/line_follower
 ---
 
-**Source code is available at: [https://github.com/dbtdsilva/robot-naga-simulated/tree/master/line_follower](https://github.com/dbtdsilva/robot-naga-simulated/tree/master/line_follower)**
+**Source code is available at: [https://github.com/dbtdsilva/robot-naga/tree/master/line_follower](https://github.com/dbtdsilva/robot-naga/tree/master/line_follower)**
 
 This project was **developed an agent for a robot with the objective of following a black line**, that robot runs using a PIC32 which runs with low resources.
 

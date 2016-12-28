@@ -2,10 +2,10 @@
 title: "Maze Solver Robotics"
 categories: academical_work
 image: "assets/images/portfolio/maze.png"
-post_url: "https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder"
+post_url: "https://github.com/dbtdsilva/robot-naga/tree/master/maze_pathfinder"
 ---
 
-**Feel free to check source code at [https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder](https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder)**
+**Feel free to check source code at [https://github.com/dbtdsilva/robot-naga/tree/master/maze_pathfinder](https://github.com/dbtdsilva/robot-naga-simulated/tree/master/maze_pathfinder)**
 
 This project consisted in **developing an autonomous agent**, which is a system that tries to understand the environment **using sensors and acts according with it using actuators**. In this case, after it senses the world, it will plan and only then actuate over the motors; it is a deliberative agent.
 
