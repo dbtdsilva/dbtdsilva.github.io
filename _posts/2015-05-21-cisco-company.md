@@ -14,7 +14,7 @@ This project includes the **implementations of several mechanisms**:
 3. Implementation of local VLANs for different types of access and some VLANs end-to-end for security cameras and;
 4. QoS implementation for the VoIP conferences;
 5. SNMP to monitor some attempts of IP Spoofing;
-6. Implementation of SNAP (Stateful NAT, the network receives connectivity from two different ISP).
+6. Implementation of SNAT (Stateful NAT, the network receives connectivity from two different ISP).
 
 _In the following image it is possible to visualize the schema previously described._
 
