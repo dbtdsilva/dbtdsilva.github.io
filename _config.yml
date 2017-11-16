@@ -27,7 +27,7 @@ google_analytics: "UA-85172556-1"
 markdown: kramdown
 #theme: minima
 
-gems:
+plugins:
   - jekyll-minifier
 
 jekyll-minifier:

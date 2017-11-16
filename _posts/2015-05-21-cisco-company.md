@@ -18,4 +18,4 @@ This project includes the **implementations of several mechanisms**:
 
 _In the following image it is possible to visualize the schema previously described._
 
-![Company Cisco GNS3](){:data-original="assets/images/portfolio/description/company.png"}
+![Company Cisco GNS3](){:src="assets/images/portfolio/description/company.png"}

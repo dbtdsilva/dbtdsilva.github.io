@@ -17,4 +17,4 @@ In order for the **user to have access to the titles he/she wants**, we also hav
 There is available a **report** which describes what was done for this project: **[https://github.com/dbtdsilva/security-iecds-drm/blob/master/Report60337_60340_Final.pdf](https://github.com/dbtdsilva/security-iecds-drm/blob/master/Report60337_60340_Final.pdf)**
 
 _The following image shows an example of what the report contains. In this case, this represents a login diagram with a citizen card verifying a challenge signed with the private key that is stored in that card._
-![Login diagram](){:data-original="assets/images/portfolio/description/security.png"}
+![Login diagram](){:src="assets/images/portfolio/description/security.png"}

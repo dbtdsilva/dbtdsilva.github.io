@@ -13,6 +13,6 @@ Moreover, it consisted in developing an autonomous agent, which is a system that
 
 The follow image shows an example of what the robot has to deal with.
 
-![Line follower](){:data-original="assets/images/portfolio/description/line-follower.png"}
+![Line follower](){:src="assets/images/portfolio/description/line-follower.png"}
 
 **_It is possible to verify in more detail what was done for this project in [this report](https://github.com/dbtdsilva/robot-naga-simulated/blob/master/docs/line_follower_report.pdf)._**
