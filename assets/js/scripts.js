@@ -30,16 +30,6 @@ jQuery(function($) {
         }
     });
 
-    $(function() {
-        $("img.lazy").lazyload({
-            threshold : 1250
-        });
-
-        $(".modal-custom").find('img').lazyload({
-            event : "modal-activation"
-        });
-    });
-
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
@@ -180,13 +170,13 @@ jQuery(function($) {
         delegate: 'a.modal-link',
         removalDelay: 250, //delay removal by X to allow out-animation
         callbacks: {
-            open: function() { 
-                $('.scroll-up').css('padding-right', getScrollBarWidth() + "px"); 
-                $('header').css('padding-right', getScrollBarWidth() + "px"); 
-            }, 
-            close: function() { 
-                $('.scroll-up').css('padding-right', 0); 
-                $('header').css('padding-right', 0); 
+            open: function() {
+                $('.scroll-up').css('padding-right', getScrollBarWidth() + "px");
+                $('header').css('padding-right', getScrollBarWidth() + "px");
+            },
+            close: function() {
+                $('.scroll-up').css('padding-right', 0);
+                $('header').css('padding-right', 0);
             },
             beforeOpen: function() {
                 this.st.mainClass = this.st.el.attr('data-effect');
