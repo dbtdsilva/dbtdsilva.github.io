@@ -1,10 +1,10 @@
 title: "<a href='http://www.ieeta.pt/' target='_blank'>Research Scholarship</a>"
 subtitle: "Bioinformatics Group - Image and Voice report"
 subsubtitle: "Instituto de Electrónica e Telecomunicações de Aveiro"
-order: 2
+order: 3
 date: 2014-04-15 00:00:00 +0100
 categories: ["experience"]
-class: "timeline-inverted"
+class: ""
 description: "Working on medical image (import raw data) and improved voice recognition (provided by Web Speech API Specification) with a system that allowed to have specific recognition profiles for different doctors."
 image_path: "assets/images/work/ieeta_logo.png"
 location: "<a href='http://www.ieeta.pt' target='_blank'>IEETA, Aveiro, Portugal</a>"
