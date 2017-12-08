@@ -16,7 +16,7 @@ This agent will have to **find its way to the final target through a maze**. Thi
 _The following image shows one of the possible mazes:_
 ![One possible maze](){:src="assets/images/portfolio/description/maze.png"}
 
-Besides the description of the problem, the strategies adopted to fulfil every challenge are described. For example, when exploring the agent uses an flood fill algorithm to discover the next unexplored zone.
+Besides the description of the problem, the strategies adopted to fulfil every challenge are described. For example, when exploring the agent uses a flood fill algorithm to discover the next unexplored zone.
 After it finds the target area, it also checks if it has the best path to return. To discover if it has the best path, it compares the size of the path of an A* algorithm of explored and unexplored nodes to the size of a path of an A* algorithm with explored nodes only.
 
 _In the following image it is possible to verify that the agent is able to create a mapping and plans his next action. The orange path is the best path discovered and purple path might be a better path than the discovered one._
