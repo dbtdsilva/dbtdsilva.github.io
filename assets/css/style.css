@@ -260,7 +260,8 @@ ul.list-check li::before {
 .intro h1 span {
     color: #c74747;
 }
-.intro p {
+.intro p,
+.intro h3 {
     color: #f7f7f7;
     margin-bottom: 40px;
 }
