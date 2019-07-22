@@ -2,7 +2,14 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <body>
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        {% include sidebar.html %}
+        <main class="col offset-md-3 bg-faded py-3">
+          {{ content }}
+        </main>
+      </div>
+    </div>
     {% include footer-scripts.html %}
   </body>
-
 </html>
