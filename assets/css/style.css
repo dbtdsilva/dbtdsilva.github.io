@@ -2,6 +2,25 @@ body, html {
     height: 100%;
 }
 
+aside {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-image: url("../images/personal/desk-cloud-darker.png");
+}
+
+.navbar-brand {
+    margin: auto auto 0;
+}
+
+.navbar-collapse {
+    margin-bottom: auto;
+    flex-grow: 0;
+}
+
+.custom-container {
+    /* TODO: Fixup margins according to different devices */
+    margin-right: 18%; margin-left: 7%; margin-top: 4%;
+}
+
 @media (min-width: 768px) {
     aside {
         height: 100%;
