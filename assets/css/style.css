@@ -17,7 +17,6 @@ aside {
 }
 
 .custom-container {
-    /* TODO: Fixup margins according to different devices */
     margin-right: 18%; margin-left: 7%; margin-top: 4%;
 }
 
@@ -27,8 +26,17 @@ aside {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     main {
         margin-top: 50px;
+    }
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hidden-lg {
+        display: none;
     }
 }
