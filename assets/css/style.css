@@ -17,7 +17,9 @@ aside {
 }
 
 .custom-container {
-    margin-right: 18%; margin-left: 7%; margin-top: 4%;
+    max-width: 800px;
+    margin-left: 3em;
+    margin-top: 3em;
 }
 
 @media (min-width: 768px) {
@@ -28,7 +30,7 @@ aside {
 
 @media (max-width: 767.98px) {
     main {
-        margin-top: 50px;
+        margin-top: 72px;
     }
     .hidden-md {
         display: none;
@@ -38,5 +40,11 @@ aside {
 @media (max-width: 991.98px) {
     .hidden-lg {
         display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .custom-container {
+        margin: 0;
     }
 }
