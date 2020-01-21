@@ -1,0 +1,13 @@
+title: "<a href='https://summerofcode.withgoogle.com/' target='_blank'>Software Engineer</a>"
+subtitle: "Outsourcing for Volkswagen AG"
+subsubtitle: "AKKA Technologies"
+order: 1
+date: 2018-04-15 00:00:00 +0100
+categories: ["experience"]
+class: ""
+description: "Developed 3 software solutions for 2 different clients for Volkswagen AG, mainly software to communicate with hardware and cloud management.
+On the main project, I was responsible for leading and providing oversight of a five-person team, discussed roadblocks and promoted use of good practices. The project was developed with Spring and Angular and deployed under OpenStack.
+The other two projects were software to communicate with some specific hardware using CAN and UART protocols."
+image_path: "assets/images/work/akka_logo.svg"
+location: "Wolfsburg, Germany"
+date_string: "April 2018 - Current"
