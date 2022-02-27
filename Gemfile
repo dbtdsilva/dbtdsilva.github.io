@@ -24,7 +24,6 @@ ruby RUBY_VERSION
 # end
 
 gem "jekyll-minifier"
-gem "jekyll-age"
 
 require 'json'
 require 'open-uri'

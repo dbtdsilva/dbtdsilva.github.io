@@ -29,7 +29,6 @@ markdown: kramdown
 
 plugins:
   - jekyll-minifier
-  - jekyll-age
 
 jekyll-minifier:
   exclude:
