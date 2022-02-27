@@ -1,7 +1,7 @@
 <section id="resume" class="resume-section section-padding">
     <div class="container">
         <h2 class="section-title">Resume</h2>
-        {% for cat_item in site.data.resume %}
+        {% for cat_item in site.data.resume reversed %}
         {% assign category = cat_item[0] %}
         <div class="row">
             <div class="col-md-12">
@@ -23,18 +23,18 @@
                             <div class="timeline-panel">                    
                                 <div class="timeline-header">
                                     <div class="row" style="margin-left: 0px">
-                                        <div class="col-md-2 col-sm-3 hidden-xs text-center vcenter">
-                                            <img class="logo lazy" src="{{ post.image_path }}" />
+                                        <div class="col-md-2 col-sm-3 hidden-xs text-center" style="display: flex;align-items: center;">
+                                            <img class="logo lazy" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                                         </div>
                                         <div class="col-md-10 col-sm-9">
-                                            <h3>{{ post.title }}</h3>
-                                            <span><b>{{ post.subtitle }}</b></span>
+                                            <h4>{{ post.title }}</h4>
+                                            <b>{{ post.subtitle }}</b><br/>
+                                            <b>{{ post.subsubtitle }}</b>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="timeline-body">
                                     <div>
-                                        <div class='text-center'><b>{{ post.subsubtitle }}</b></div>
                                         <span>{{ post.description }}</span>
                                     </div>
                                 </div>
