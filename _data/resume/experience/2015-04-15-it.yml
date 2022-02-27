@@ -1,10 +1,10 @@
 title: "<a href='https://www.it.pt/' target='_blank'>Research Scholarship</a>"
 subtitle: "ATNoG - Internet of Things"
 subsubtitle: "Instituto de Telecomunicações"
-order: 3
+order: 4
 date: 2015-04-15 00:00:00 +0100
 categories: ["experience"]
-class: ""
+class: "timeline-inverted"
 description: "Collecting data from Libelium Waspmotes using a Raspberry with XBee radio to communicate with those motes. After collecting the data, Raspberry publishes it to the server using MQTT protocol. Also implemented a system with AngularJS and Django to display the data (with some alerts using NodeRED)."
 image_path: "assets/images/work/it_logo.png"
 location: "<a href='https://www.it.pt/' target='_blank'>IT, Aveiro, Portugal</a>"
