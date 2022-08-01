@@ -10,3 +10,7 @@ image_path: "assets/images/work/it_logo.png"
 website: "https://www.it.pt/"
 location: "IT, Aveiro, Portugal"
 date_string: "April 2015 - March 2016"
+positions: 
+  - title: "Research Scholarship"
+    start: 2015-04-01
+    end: 2016-03-31

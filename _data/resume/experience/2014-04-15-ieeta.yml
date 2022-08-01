@@ -10,3 +10,7 @@ image_path: "assets/images/work/ieeta_logo.png"
 website: "http://www.ieeta.pt"
 location: "IEETA, Aveiro, Portugal"
 date_string: "April 2014 - March 2015"
+positions: 
+  - title: "Software Engineer"
+    start: 2014-04-01
+    end: 2015-03-31

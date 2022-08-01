@@ -1,10 +1,10 @@
-<section id="resume" class="resume-section section-padding">
+<section id="resume" class="section-padding">
     <div class="container">
-        <h2 class="section-title">My Journey</h2>
+        <h2 class="section-title">Journey</h2>
         {% for cat_item in site.data.resume reversed %}
         {% assign category = cat_item[0] %}
         <div>
-            <h3>{{ category }}</h3>
+            <h2 class="text-center">{{ category | capitalize }}</h3>
         </div>
         <div class="resume">
             {% assign posts = site.data.resume.[category] | sort %}
@@ -12,12 +12,14 @@
             {% assign post = post_obj[1] %}
             <div class="row">
                 <div class="col-md-2 col-sm-3 col-12-xs text-center" style="display: flex;align-items: center;">
-                    <img class="logo lazy" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
+                    <img class="img-responsive" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                 </div>
                 <div class="col-md-10 col-sm-9 col-12-xs">
-                    <h2>{{ post.institution }}</h2>
-                    <h4>{{ post.date_string }}</h4>
-                    <h4>{{ post.title }}</h4>
+                    <span class="h2">{{ post.institution }}</span>
+                    {% for position in post.positions %}
+                    <h4>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></h4>
+                    {% endfor %}
+                    <h4>{{ post.location}}</h4>
                     <span>{{ post.description }}</span>
                 </div>
             </div>
