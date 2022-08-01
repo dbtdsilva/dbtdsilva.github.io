@@ -1,54 +1,28 @@
 <section id="resume" class="resume-section section-padding">
     <div class="container">
-        <h2 class="section-title">Resume</h2>
+        <h2 class="section-title">My Journey</h2>
         {% for cat_item in site.data.resume reversed %}
         {% assign category = cat_item[0] %}
-        <div class="row">
-            <div class="col-md-12">
-                <div class="resume-title">
-                    <h3>{{ category }}</h3>
+        <div>
+            <h3>{{ category }}</h3>
+        </div>
+        <div class="resume">
+            {% assign posts = site.data.resume.[category] | sort %}
+            {% for post_obj in posts reversed %}
+            {% assign post = post_obj[1] %}
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-12-xs text-center" style="display: flex;align-items: center;">
+                    <img class="logo lazy" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                 </div>
-                <div class="resume">
-                    <ul class="timeline">
-                        {% assign posts = site.data.resume.[category] | sort %}
-                        {% for post_obj in posts reversed %}
-                        {% assign post = post_obj[1] %}
-                        <li class="{{ post.class }}">
-                            <div class="timeline-badge primary">
-                                <a>
-                                    <i class="glyphicon glyphicon-record" rel="tooltip" title="{{ post.date_string }}">
-                                    </i>
-                                </a>
-                            </div>
-                            <div class="timeline-panel">                    
-                                <div class="timeline-header">
-                                    <div class="row" style="margin-left: 0px">
-                                        <div class="col-md-2 col-sm-3 hidden-xs text-center" style="display: flex;align-items: center;">
-                                            <img class="logo lazy" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
-                                        </div>
-                                        <div class="col-md-10 col-sm-9">
-                                            <h4>{{ post.title }}</h4>
-                                            <b>{{ post.subtitle }}</b><br/>
-                                            <b>{{ post.subsubtitle }}</b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline-body">
-                                    <div>
-                                        <span>{{ post.description }}</span>
-                                    </div>
-                                </div>
-                                <div class="timeline-footer">
-                                    <b><span>{{ post.location }}</span>
-                                    <span class="pull-right">{{ post.date_string }}</span></b>
-                                </div>
-                            </div>
-                        </li>
-                        {% endfor %}
-                        <li class="clearfix" style="float: none;"></li>
-                    </ul>
+                <div class="col-md-10 col-sm-9 col-12-xs">
+                    <h2>{{ post.institution }}</h2>
+                    <h4>{{ post.date_string }}</h4>
+                    <h4>{{ post.title }}</h4>
+                    <span>{{ post.description }}</span>
                 </div>
             </div>
+            <hr>
+            {% endfor %}
         </div>
         {% endfor %}
     </div>

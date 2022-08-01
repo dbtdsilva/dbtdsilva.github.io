@@ -1,11 +1,12 @@
-title: "<a href='http://www.ua.pt/ensino/course/27' target='_blank'>Electronic Engineering and Telecommunications</a>"
+title: "Electronic Engineering and Telecommunications"
 subtitle: "Master's Integrated (Bachelor and Master's degree)"
-subsubtitle: "Progress 140 out of 300 credits completed"
+institution: "Progress 140 out of 300 credits completed"
 order: 2
 date: 2013-06-14 00:00:00 +0100
 categories: ["education"]
 class: "timeline-inverted"
 description: "After I finished high school, I decided to pursue a broad area as electronic, but after some time I have realized that I was wrong and what I really wanted to do was to discover every small detail about computers. So after the 3rd year in this course, I changed to <a href='http://www.ua.pt/ensino/course/23' target='_blank'>Computer and Telematics Engineering</a>."
 image_path: "assets/images/work/ua_logo.png"
-location: "<a href='http://www.ua.pt/' target='_blank'>University of Aveiro, Portugal</a>"
+website: "http://www.ua.pt/ensino/course/27"
+location: "University of Aveiro, Portugal"
 date_string: "September 2010 - September 2013"

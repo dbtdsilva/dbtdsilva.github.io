@@ -1,11 +1,12 @@
-title: "<a href='https://www.sophiagenetics.com/' target='_blank'>Software Development Eng.</a>"
+title: "Software Development Engineer"
 subtitle: "Development and client support"
-subsubtitle: "SOPHiA Genetics"
+institution: "SOPHiA Genetics"
 order: 1
 date: 2021-01-01 00:00:00 +0100
 categories: ["experience"]
 class: ""
 description: "Currently working with two projects: On the main project is part of changing the current architecture from monolith (which is the second project) to microservices, where I'm responsible for maintaining and developing those two of the microservices (started creating them from zero); The secondary project is the one the products mainly used that we are responsible to maintain."
 image_path: "assets/images/work/sophia.png"
+website: "https://www.sophiagenetics.com/"
 location: "Lausanne, Switzerland"
 date_string: "January 2021 - Current"

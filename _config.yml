@@ -17,10 +17,10 @@ title: Diogo Silva | Resume, Works, Experience
 email: dbtdsilva@gmail.com
 description: This page contains several works and the resume from Diogo Silva who is a final year student pursuing MSc Computer and Telematics Engineering at UA (Portugal)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.dsilva.pt" # the base hostname & protocol for your site
+url: "https://dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva
 github_username:  dbtdsilva
-phone_number: "+351914388007"
+phone_number: "+41772669161"
 google_analytics: "UA-85172556-1"
 
 # Build settings

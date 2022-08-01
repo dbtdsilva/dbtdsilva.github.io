@@ -1,11 +1,12 @@
-title: "<a href='https://summerofcode.withgoogle.com/' target='_blank'>Google Summer of Code</a>"
+title: "Google Summer of Code"
 subtitle: "Cloudstorage Integration in VLC"
-subsubtitle: "VideoLAN"
+institution: "VideoLAN"
 order: 3
 date: 2017-09-31 00:00:00 +0100
 categories: ["experience"]
 class: ""
 description: "This work had the aim of integrating libcloudstorage into VLC. The library libcloudstorage provides access to files located in cloud storage services, such as Google Drive or Dropbox. That said, VLC now allows to directly reproduce media files from the cloud using this project. More details can be found in the following link: <a target='_blank' href='https://summerofcode.withgoogle.com/projects/#5357504761430016'>summerofcode.withgoogle.com/projects/#5357504761430016</a>"
 image_path: "assets/images/work/videolan_logo.png"
+website: "https://summerofcode.withgoogle.com/"
 location: "Remote"
 date_string: "June 2017 - August 2017"
