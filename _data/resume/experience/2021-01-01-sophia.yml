@@ -10,3 +10,13 @@ image_path: "assets/images/work/sophia.png"
 website: "https://www.sophiagenetics.com/"
 location: "Lausanne, Switzerland"
 date_string: "January 2021 - Current"
+positions: 
+  - title: "Software Development Engineer I"
+    start: 2021-01-01
+    end: 2021-12-31
+  - title: "Software Development Engineer II"
+    start: 2022-01-01
+    end: 2022-06-31
+  - title: "Senior Software Development Engineer"
+    start: 2022-07-01
+    end: Current

@@ -58,36 +58,6 @@ a,
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    margin: 0;
-}
-h1 {
-    font-size: 36px;
-    line-height: 36px;
-}
-h2 {
-    font-size: 30px;
-    line-height: 30px;
-}
-h3 {
-    font-size: 24px;
-    line-height: 24px;
-}
-h4 {
-    font-size: 18px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 12px;
-}
 .form-control {
     background-color: #f7f7f7;
     border: 1px solid #e8e8e8;
@@ -196,7 +166,7 @@ ul.list-check li::before {
     margin-right: 10px;
 }
 .section-padding {
-    padding: 120px 0 100px;
+    padding: 60px 0 60px;
 }
 .section-image {
     padding: 30px;
@@ -260,6 +230,7 @@ ul.list-check li::before {
     font-size: 60px;
     line-height: 80px;
     margin-bottom: 16px;
+    margin-top: 0px;
     color: #c74747;
 }
 .intro h1 span {
@@ -268,6 +239,7 @@ ul.list-check li::before {
 .intro p,
 .intro h3 {
     color: #f7f7f7;
+    margin-bottom: 0px;
 }
 .intro-sub {
     color: #fff;
@@ -477,36 +449,6 @@ ul.list-check li::before {
 }
 .resume {
     position: relative;
-}
-.resume:before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    width: 10px;
-    height: 10px;
-    background-color: #e1e1e1;
-    left: 50%;
-    margin-left: -6px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.resume:after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    width: 10px;
-    height: 10px;
-    background-color: #e1e1e1;
-    left: 50%;
-    margin-left: -6px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 .tooltip {
     position: absolute;

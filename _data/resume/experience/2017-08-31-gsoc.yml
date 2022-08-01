@@ -10,3 +10,7 @@ image_path: "assets/images/work/videolan_logo.png"
 website: "https://summerofcode.withgoogle.com/"
 location: "Remote"
 date_string: "June 2017 - August 2017"
+positions: 
+  - title: "Google Summer of Code Student"
+    start: 2017-06-01
+    end: 2017-08-01

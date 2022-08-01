@@ -1,6 +1,6 @@
 title: "Computer and Telematics Engineering"
 subtitle: "Master's Integrated (Bachelor and Master's degree)"
-institution: ""
+institution: "Computer and Telematics Engineering"
 order: 1
 date: 2017-12-21 00:00:00 +0100
 categories: ["education"]
@@ -8,5 +8,9 @@ class: ""
 description: "This course aims to offer a solid training in basic sciences and a wide range of options in the technologies of computing, information and telecommunications which have assumed a dominant role. That wide range of options includes computer archicture, telecommunications, computer vision, data analysis, services, security, distributed systems and so on."
 image_path: "assets/images/work/ua_logo.png"
 website: "http://www.ua.pt/ensino/course/23"
-location: "<a href='http://www.ua.pt/' target='_blank'>University of Aveiro, Portugal</a>"
+location: "University of Aveiro, Portugal"
 date_string: "September 2013 - December 2017"
+positions: 
+  - title: "Student"
+    start: 2013-09-01
+    end: 2017-12-31
