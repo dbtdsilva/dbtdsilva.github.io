@@ -20,7 +20,7 @@ html {
     overflow-x: hidden;
 }
 a {
-    color: #c74747;
+    color: #5e9516;
 }
 a,
 a > * {
@@ -65,7 +65,7 @@ a,
     box-shadow: none;
 }
 .form-control:focus {
-    border-color: #c74747;
+    border-color: #5e9516;
     box-shadow: none;
 }
 .alert {
@@ -93,7 +93,7 @@ a,
     border-radius: 4px;
 }
 .btn-primary {
-    background-color: #c74747;
+    background-color: #5e9516;
     border-color: rgba(51, 51, 51, 0.15);
 }
 .btn-primary:hover,
@@ -103,8 +103,8 @@ a,
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #c74747;
-    border-color: #c74747;
+    background-color: #5e9516;
+    border-color: #5e9516;
 }
 .btn-info {
     background-color: #52b3d9;
@@ -130,7 +130,7 @@ a,
 .btn-default.focus,
 .btn-default:active,
 .btn-default.active {
-    color: #c74747;
+    color: #5e9516;
     background-color: #fff;
     border-color: #fff;
 }
@@ -162,7 +162,7 @@ ul.list-check li {
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #c74747;
+    color: #5e9516;
     margin-right: 10px;
 }
 ul.list-bullet {
@@ -181,11 +181,6 @@ ul.list-bullet {
     line-height: 50px;
     color: #2c3e50;
     position: relative;
-}
-@media (max-width: 640px) {
-    .tt-fullHeight {
-        height: 560px !important;
-    }
 }
 #home {
     background: url(../images/personal/desk-home.jpg) no-repeat center center;
@@ -223,10 +218,10 @@ ul.list-bullet {
     line-height: 80px;
     margin-bottom: 16px;
     margin-top: 0px;
-    color: #c74747;
+    color: #5e9516;
 }
 .intro h1 span {
-    color: #c74747;
+    color: #5e9516;
 }
 .intro p,
 .intro h3 {
@@ -279,7 +274,7 @@ ul.list-bullet {
     transition: all 300ms;
 }
 .social-icons a i:hover::after {
-    background: #c74747;
+    background: #5e9516;
     border: 1px solid transparent;
     z-index: 0;
 }
@@ -321,7 +316,7 @@ ul.list-bullet {
     visibility: hidden;
     opacity: 0;
     border: 1px solid #ddd;
-    border-top: 2px solid #c74747;
+    border-top: 2px solid #5e9516;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
@@ -369,11 +364,11 @@ ul.list-bullet {
 .navbar-custom .nav li a:hover {
     background: none;
     outline: 0;
-    color: #c74747;
+    color: #5e9516;
 }
 .navbar-custom .nav li.active,
 .navbar-custom .navbar-nav > li.active > a {
-    border-bottom: #c74747 solid 3px;
+    border-bottom: #5e9516 solid 3px;
 }
 .navbar-custom .navbar-brand {
     font-weight: 700;
@@ -432,6 +427,14 @@ ul.list-bullet {
     background-attachment: fixed;
     position: relative;
 }
+.cloud-img {
+    width: 70%;
+}
+@media (max-width: 640px) {
+    .cloud-img {
+        width: 100% !important;
+    }
+}
 .resume-title h3 {
     text-align: center;
 }
@@ -440,6 +443,9 @@ ul.list-bullet {
 }
 .resume {
     position: relative;
+}
+.resume .title {
+    color: #387dd8;
 }
 .tooltip {
     position: absolute;
@@ -609,7 +615,7 @@ ul.list-bullet {
     width: 75%;
 }
 .progress-bar {
-    background-color: #c74747;
+    background-color: #5e9516;
 }
 .progress-bar span {
     position: absolute;
@@ -681,10 +687,10 @@ ul.list-bullet {
 .portfolio-item {
     padding-right: 5px;
     padding-left: 5px;
-    min-height: 135px;
+    min-height: 130px;
 }
 .portfolio-image {
-    height: 120px;
+    height: 115px;
 }
 .portfolio-bg {
     background: #fff;
@@ -696,11 +702,11 @@ ul.list-bullet {
     overflow: hidden;
 }
 #filter {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     text-align: center;
 }
 #filter li a {
-    color: #c74747;
+    color: #5e9516;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -710,7 +716,7 @@ ul.list-bullet {
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #c74747;
+    background: #5e9516;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -748,7 +754,7 @@ ul.list-bullet {
 }
 .links a i {
     position: relative;
-    color: #c74747;
+    color: #5e9516;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -763,7 +769,7 @@ ul.list-bullet {
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #c74747;
+    border: 1px solid #5e9516;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -773,7 +779,7 @@ ul.list-bullet {
     transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #c74747;
+    background-color: #5e9516;
 }
 .portfolio:hover .portfolio-info {
     bottom: 0;
@@ -785,7 +791,7 @@ ul.list-bullet {
     bottom: -moz-calc(100% - 25px);
     bottom: calc(100% - 25px);
     left: 0;
-    background-color: rgb(199, 71, 71);
+    background-color: #5e9516;
     color: #fff;
     width: 100%;
     height: 25px;
@@ -896,7 +902,7 @@ ul.list-bullet {
     top: -10px;
     width: 40px;
     height: 40px;
-    background-color: #c74747;
+    background-color: #5e9516;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -944,7 +950,7 @@ ul.list-bullet {
     color: #282828;
 }
 .entry-title a:hover {
-    color: #c74747;
+    color: #5e9516;
 }
 .entry-meta {
     color: #afafaf;
@@ -961,7 +967,7 @@ ul.list-bullet {
     font-weight: 400;
 }
 .entry-meta ul li a:hover {
-    color: #c74747;
+    color: #5e9516;
 }
 .blog-more {
     margin-top: 40px;
@@ -1034,7 +1040,7 @@ ul.list-bullet {
     right: 1.8em;
 }
 .scroll-up a {
-    background-color: #c74747;
+    background-color: #5e9516;
     display: block;
     width: 28px;
     height: 28px;
@@ -1143,7 +1149,7 @@ ul.list-bullet {
     margin-bottom: 16px;
 }
 .personal-info h1 span {
-    color: #c74747;
+    color: #5e9516;
 }
 .personal-info p {
     margin-bottom: 40px;
