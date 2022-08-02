@@ -1,13 +1,16 @@
 title: "Software Engineer"
-subtitle: "Outsourcing for Volkswagen AG"
 institution: "AKKA Technologies"
 order: 2
 date: 2018-04-15 00:00:00 +0100
 categories: ["experience"]
 class: "timeline-inverted"
-description: "Developed 3 software solutions for 2 different clients for Volkswagen AG, mainly software to communicate with hardware and cloud management.
-On the main project, I was responsible for leading and providing oversight of a five-person team, discussed roadblocks and promoted use of good practices. The project was developed with Spring and Angular and deployed under OpenStack.
-The other two projects were software to communicate with some specific hardware using CAN and UART protocols."
+description: 'Developed 3 software solutions for 2 different clients for Volkswagen AG:
+<ul class="list-bullet fa-ul">
+<li>On the main project, provided oversight to five-person team, discussed roadblocks and promoted use of good practices. The project was developed with Spring and Angular and deployed under OpenStack;</li>
+<li>GUI used to control devices over CAN with MATLAB integration using C++ and QT;</li>
+<li>Small project using Python and QT to control devices over UART.</li>
+</ul>
+Tech Stack: (Main project) Java, Spring, Angular, MySQL, MongoDB, Docker, OpenStack, Shell, DNS, Tomcat, Jenkins, Git; (Side projects) C++, QT, MATLAB, Boost, Python, CAN, UART, Git'
 image_path: "assets/images/work/akka_logo.svg"
 website: "https://www.akka-technologies.com/"
 location: "Wolfsburg, Germany"

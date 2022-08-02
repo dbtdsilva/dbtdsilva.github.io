@@ -1,11 +1,12 @@
 title: "Research Scholarship"
-subtitle: "ATNoG - Internet of Things"
 institution: "Instituto de Telecomunicações"
 order: 4
 date: 2015-04-15 00:00:00 +0100
 categories: ["experience"]
 class: "timeline-inverted"
-description: "Collecting data from Libelium Waspmotes using a Raspberry with XBee radio to communicate with those motes. After collecting the data, Raspberry publishes it to the server using MQTT protocol. Also implemented a system with AngularJS and Django to display the data (with some alerts using NodeRED)."
+description: "an IoT solution to collect data in an agriculture field and send it to a specific server. The solution consisted of configuring several Libelium boards responsible for collecting sensorial data and send it to a Raspberry. That raspberry was equipped with XBee radio to communicate with the Libelium boards and it was also responsible for publishing the received data to a remote server using MQTT protocol. It also included a configuration / image processing of an infrared camera to scan the agriculture field with a drone to collect data from time-to-time.
+During this work, a system to display the data was also implemented using AngularJS (front-end) and Django (services).
+<br/>Tech Stack: Python, C/C++, OpenCV, LoRa, XBee, Raspberry, Libelium, MQTT, Django, AngularJS"
 image_path: "assets/images/work/it_logo.png"
 website: "https://www.it.pt/"
 location: "IT, Aveiro, Portugal"
