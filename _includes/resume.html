@@ -4,7 +4,7 @@
         {% for cat_item in site.data.resume reversed %}
         {% assign category = cat_item[0] %}
         <div>
-            <h2 class="text-center" style="margin: 40px 0">{{ category | capitalize }}</h2>
+            <h2 class="text-center" style="margin: 40px 0"><i>{{ category | capitalize }}</i></h2>
         </div>
         <div class="resume">
             {% assign posts = site.data.resume.[category] | sort %}
@@ -17,7 +17,7 @@
                 <div class="col-md-10 col-sm-9 col-11-xs">
                     <span class="h4"><a href="{{ post.website }}" target="_blank">{{ post.institution }}</a></span><br/>
                     {% for position in post.positions reversed %}
-                    <span><b>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></b></span><br/>
+                    <span class="title"><b>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></b></span><br/>
                     {% endfor %}
                     <span><b>{{ post.location}}</b></span><br/>
                     <span>{{ post.description }}</span>
