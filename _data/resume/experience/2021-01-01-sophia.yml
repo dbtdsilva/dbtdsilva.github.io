@@ -1,11 +1,15 @@
 title: "Software Development Engineer"
-subtitle: "Development and client support"
 institution: "SOPHiA Genetics"
 order: 1
 date: 2021-01-01 00:00:00 +0100
 categories: ["experience"]
 class: ""
-description: "Currently working with two projects: On the main project is part of changing the current architecture from monolith (which is the second project) to microservices, where I'm responsible for maintaining and developing those two of the microservices (started creating them from zero); The secondary project is the one the products mainly used that we are responsible to maintain."
+description: 'Worked across multiple projects:
+<ul class="list-bullet fa-ul">
+<li>The main project is part of changing the current architecture from monolith (which is the second projct) to microservices, where I am responsible for maintaining and developing some of these microservices (started creating them from zero);</li>
+<li>The secondary project is the one the products mainly used that we are responsible to maintain.</li>
+</ul>
+Tech Stack: (Main project) Java, Micronaut, GraphQL, Kafka, Kubernetes, Gitlab CI/CD, Reckoner, Git (Secondary project) Java, Spring, JavaFX, Tomcat, Bamboo, Docker, Git'
 image_path: "assets/images/work/sophia.png"
 website: "https://www.sophiagenetics.com/"
 location: "Lausanne, Switzerland"

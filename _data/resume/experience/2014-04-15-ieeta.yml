@@ -1,11 +1,11 @@
 title: "Research Scholarship"
-subtitle: "Bioinformatics Group - Image and Voice report"
 institution: "Instituto de Electrónica e Telecomunicações de Aveiro"
 order: 5
 date: 2014-04-15 00:00:00 +0100
 categories: ["experience"]
 class: ""
-description: "Working on medical image (import raw data) and improved voice recognition (provided by Web Speech API Specification) with a system that allowed to have specific recognition profiles for different doctors."
+description: "Worked on medical image representation (import raw data) and improved voice recognition (provided by Web Speech API Specification) with a system that allowed to have specific recognition profiles for different doctors. This system was done with Django on the backend and AngularJS on the frontend.
+<br/>Tech Stack: Python, AngularJS, Web Speech API, Django"
 image_path: "assets/images/work/ieeta_logo.png"
 website: "http://www.ieeta.pt"
 location: "IEETA, Aveiro, Portugal"

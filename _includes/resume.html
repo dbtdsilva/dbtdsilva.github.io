@@ -11,15 +11,15 @@
             {% for post_obj in posts reversed %}
             {% assign post = post_obj[1] %}
             <div class="row" style="margin-bottom: 30px">
-                <div class="col-md-2 col-sm-3 col-12-xs text-center" style="display: flex;align-items: center;">
+                <div class="col-md-2 col-sm-3 hidden-xs text-center" style="display: flex;align-items: center;">
                     <img class="img-responsive" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                 </div>
-                <div class="col-md-10 col-sm-9 col-12-xs">
-                    <span class="h2">{{ post.institution }}</span>
-                    {% for position in post.positions %}
-                    <h4>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></h4>
+                <div class="col-md-10 col-sm-9 col-11-xs">
+                    <span class="h4">{{ post.institution }}</span><br/>
+                    {% for position in post.positions reversed %}
+                    <span><b>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></b></span><br/>
                     {% endfor %}
-                    <h4>{{ post.location}}</h4>
+                    <span><b>{{ post.location}}</b></span><br/>
                     <span>{{ post.description }}</span>
                 </div>
             </div>

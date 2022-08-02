@@ -8,11 +8,10 @@
                         <img src="assets/images/personal/me.jpg" alt="" class="img lazy" style="border-radius: 10px">
                     </div>
                     <ul>
-                        <li><strong>Name: </strong>{{ site.data.me.name }}</li>
-                        <li><strong>Date of birth: </strong>{{ site.data.me.date_of_birth }}</li>
-                        <li><strong>Nationality: </strong>{{ site.data.me.nationality }}</li>
-                        <li><strong>Phone: </strong>{% include phone.html %}</li>
-                        <li><strong>Email: </strong>{% include email.html %}</li>
+                        <li><i class="fa fa-birthday-cake"></i><span>&nbsp;{{ site.data.me.date_of_birth }}</span></li>
+                        <li><i class="fa fa-flag"></i><span>&nbsp;{{ site.data.me.nationality }}</span></li>
+                        <li><i class="fa fa-phone"></i><span>&nbsp;{% include phone.html %}</span></li>
+                        <li><i class="fa fa-envelope"></i><span>&nbsp;{% include email.html %}</span></li>
                     </ul>
                 </div>
             </div>
