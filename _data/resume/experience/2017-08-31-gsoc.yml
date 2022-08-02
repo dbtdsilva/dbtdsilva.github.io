@@ -1,5 +1,4 @@
-title: "Google Summer of Code"
-institution: "VideoLAN"
+institution: "VLC Media Player"
 order: 3
 date: 2017-09-31 00:00:00 +0100
 categories: ["experience"]
@@ -9,7 +8,7 @@ Google Summer of Code is not considered a job or an internship, it is a 3-month 
 <br/>Feel free to check more details about this work in the following link: <a href=\"https://summerofcode.withgoogle.com/projects/#5357504761430016\" target=\"_blank\">summerofcode.withgoogle.com/projects/#5357504761430016</a>
 <br/>Tech Stack: C/C++, Cloud Storage APIs, HTTP request / server internal implementation"
 image_path: "assets/images/work/videolan_logo.png"
-website: "https://summerofcode.withgoogle.com/"
+website: "https://www.videolan.org/"
 location: "Remote"
 date_string: "June 2017 - August 2017"
 positions: 

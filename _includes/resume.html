@@ -15,7 +15,7 @@
                     <img class="img-responsive" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                 </div>
                 <div class="col-md-10 col-sm-9 col-11-xs">
-                    <span class="h4">{{ post.institution }}</span><br/>
+                    <span class="h4"><a href="{{ post.website }}" target="_blank">{{ post.institution }}</a></span><br/>
                     {% for position in post.positions reversed %}
                     <span><b>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></b></span><br/>
                     {% endfor %}
