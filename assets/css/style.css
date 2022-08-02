@@ -681,10 +681,10 @@ ul.list-bullet {
 .portfolio-item {
     padding-right: 5px;
     padding-left: 5px;
-    min-height: 160px;
+    min-height: 135px;
 }
 .portfolio-image {
-    height: 145px;
+    height: 120px;
 }
 .portfolio-bg {
     background: #fff;
