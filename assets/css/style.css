@@ -15,9 +15,6 @@ body {
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
 }
-html {
-    scroll-behavior: smooth;
-}
 body,
 html {
     overflow-x: hidden;
