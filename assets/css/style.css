@@ -153,7 +153,6 @@ ol {
     padding: 0;
     list-style: none
 }
-ul.list-check {}
 ul.list-check li {
     position: relative;
     font-size: 18px;
@@ -183,7 +182,7 @@ ul.list-bullet {
     position: relative;
 }
 #home {
-    background: url(../images/personal/desk-home.jpg) no-repeat center center;
+    background: url(../images/personal/home-bg.jpg) no-repeat center center;
     -webkit-background-attachment: fixed;
     background-attachment: fixed;
     background-color: #222;
@@ -421,7 +420,7 @@ ul.list-bullet {
     border-bottom: 0;
 }
 .cloud-section {
-    background: url(../images/personal/desk-cloud-darker.jpg) no-repeat center center;
+    background: url(../images/personal/cloud-bg.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
