@@ -17,26 +17,27 @@
             <div id="grid">
                 {% assign posts_count = 0 %} {% assign posts_obj = site.posts %} {% for post in posts_obj %} {% assign posts_count = posts_count | plus: 1 %} {% assign category = post.categories[0] %}
                 <div class="portfolio-item col-xs-6 col-sm-4 col-md-3" data-groups='["all", "{{category}}" ]'>
-                    <div class="portfolio-bg">
-                        <div class="portfolio">
-                            <div class="tt-overlay">
-                            </div>
-                            <div class="links text-center">
-                                <a class="modal-link" href="#modal{{ posts_count }}" data-effect="mfp-3d-unfold">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                                {% if post.post_url %}
-                                <a target="_blank" href="{{ post.post_url }}">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                {% endif %}
-                            </div>
-                            <img class="lazy portfolio-image" src="{{ post.image }}" alt="image">
-                            <div class="portfolio-info">
-                                <h3><span>{{ post.title }}</span></h3>
+                    <a class="modal-link" href="#modal{{ posts_count }}" data-effect="mfp-3d-unfold">
+                        <div class="portfolio-bg">
+                            <div class="portfolio">
+                                <div class="tt-overlay"></div>
+                                <div class="links text-center">
+                                    <a class="modal-link" href="#modal{{ posts_count }}" data-effect="mfp-3d-unfold">
+                                        <i class="fa fa-search-plus"></i>
+                                    </a>
+                                    {% if post.post_url %}
+                                    <a target="_blank" href="{{ post.post_url }}">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    {% endif %}
+                                </div>
+                                <img class="lazy portfolio-image" src="{{ post.image }}" alt="image">
+                                <div class="portfolio-info">
+                                    <h3><span>{{ post.title }}</span></h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="modal-custom mfp-with-anim mfp-hide" id="modal{{ posts_count }}">
                     <div class="modal-header">
