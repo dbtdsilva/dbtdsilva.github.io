@@ -82,9 +82,9 @@ jQuery(function($) {
     (function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
-                $('.scroll-up').fadeIn();
+                $('.scroll-up-page').fadeIn();
             } else {
-                $('.scroll-up').fadeOut();
+                $('.scroll-up-page').fadeOut();
             }
         });
     }());
@@ -171,11 +171,11 @@ jQuery(function($) {
         removalDelay: 250, //delay removal by X to allow out-animation
         callbacks: {
             open: function() {
-                $('.scroll-up').css('padding-right', getScrollBarWidth() + "px");
+                $('.scroll-up-page').css('padding-right', getScrollBarWidth() + "px");
                 $('header').css('padding-right', getScrollBarWidth() + "px");
             },
             close: function() {
-                $('.scroll-up').css('padding-right', 0);
+                $('.scroll-up-page').css('padding-right', 0);
                 $('header').css('padding-right', 0);
             },
             beforeOpen: function() {
