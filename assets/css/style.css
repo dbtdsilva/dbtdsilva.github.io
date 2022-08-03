@@ -741,14 +741,14 @@ ul.list-bullet {
 .copyright p {
     margin: 0;
 }
-.scroll-up {
+.scroll-up-page {
     position: fixed;
     display: none;
     z-index: 999;
     bottom: 1.8em;
     right: 1.8em;
 }
-.scroll-up a {
+.scroll-up-page a {
     background-color: #5e9516;
     display: block;
     width: 28px;
@@ -758,8 +758,8 @@ ul.list-bullet {
     font-size: 14px;
     line-height: 28px;
 }
-.scroll-up a:hover,
-.scroll-up a:active {
+.scroll-up-page a:hover,
+.scroll-up-page a:active {
     background-color: rgba(235, 235, 235, .8);
     color: #222;
 }
