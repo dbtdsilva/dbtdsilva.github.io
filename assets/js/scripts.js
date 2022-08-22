@@ -1,11 +1,3 @@
-/*
-Theme Name: IAMX
-Author: Trendy Theme
-Author URL: trendytheme.net
-
-Slighty modified..
-*/
-
 
 jQuery(function($) {
     'use strict';
