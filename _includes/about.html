@@ -12,7 +12,23 @@
             <!-- col-md-4 -->
             <div class="col-md-8 col-md-pull-4">
                 <div class="short-info">
-                    <p>I am Diogo Silva, a 30 years old Portuguese Software Engineer. I have studied in Computer and Telematics Engineering at the University of Aveiro and I am an enthusiastic for technology. Every time that I get some free time, I just make sure to spend that time exploring something new. I think it is important to keep up with the technology.</p>
+                    {% assign birth_date = "1992-04-08" %}
+                    {% assign current_date = 'now' %}
+
+                    {% assign birth_year = birth_date | date: "%Y" %}
+                    {% assign birth_month = birth_date | date: "%m" %}
+                    {% assign birth_day = birth_date | date: "%d" %}
+
+                    {% assign current_year = current_date | date: "%Y" %}
+                    {% assign current_month = current_date | date: "%m" %}
+                    {% assign current_day = current_date | date: "%d" %}
+
+                    {% assign age = current_year | minus: birth_year %}
+                    {% if current_month < birth_month or (current_month == birth_month and current_day < birth_day) %}
+                        {% assign age = age | minus: 1 %}
+                    {% endif %}
+
+                    <p>I am Diogo Silva, a {{ age }} years old Portuguese Software Engineer. I have studied in Computer and Telematics Engineering at the University of Aveiro and I am an enthusiastic for technology. Every time that I get some free time, I just make sure to spend that time exploring something new. I think it is important to keep up with the technology.</p>
                     <p>Lately I have grown a passion for complex and different software architecture, I like to understand how they were built and thought. The kind of patterns used, how is the data managed, which frameworks and libraries are being used, how is the integration done with external tools, etc.</p>
                     <p>Along with my studies, I have had a research scholarship twice, one in the IEETA (Institute of Electronics and Informatics Engineering of Aveiro) for one year and the other one in ATNoG (Aveiro Telecommunications and Networking Group) inside of Telecommunications Institute for another year. That gave me the chance of being introduced to the researching area in my campus where I could learn a bit more and get some experience. I do not regret getting involved in those scholarships, since I had the opportunity to interact with professionals of my area and work with them.</p>
                 </div>
