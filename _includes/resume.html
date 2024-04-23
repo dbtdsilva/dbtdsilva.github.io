@@ -1,7 +1,7 @@
 <section id="resume" class="section-padding">
     <div class="container">
         <h2 class="section-title">Story about my journey</h2>
-        {% for cat_item in site.data.resume reversed %}
+        {% for cat_item in site.data.resume %}
         {% assign category = cat_item[0] %}
         <div>
             <h2 class="text-center" style="margin: 40px 0"><i>{{ category | capitalize }}</i></h2>
@@ -11,10 +11,10 @@
             {% for post_obj in posts reversed %}
             {% assign post = post_obj[1] %}
             <div class="row" style="margin-bottom: 30px">
-                <div class="col-md-2 col-sm-3 hidden-xs text-center" style="display: flex;align-items: center;">
+                <div class="col-md-1 hidden-sm hidden-xs text-center" style="display: flex;align-items: center;">
                     <img class="img-responsive" style="display: flex;align-items: center;" src="{{ post.image_path }}" />
                 </div>
-                <div class="col-md-10 col-sm-9 col-11-xs">
+                <div class="col-md-11 col-sm-12 col-12-xs">
                     <span class="h4"><a href="{{ post.website }}" target="_blank">{{ post.institution }}</a></span><br/>
                     {% for position in post.positions reversed %}
                     <span class="title"><b>{{ position.title }}, <i>{{ position.start | date: '%B %Y' }} - {{ position.end | date: '%B %Y' }}</i></b></span><br/>
