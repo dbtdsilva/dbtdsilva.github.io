@@ -5,6 +5,7 @@ categories: ["experience"]
 class: ""
 description: 'Worked in several fronts across the Loxy project:
 <ul class="list-bullet fa-ul">
+<li>Contributed to several aspects in the company workflow, such as: process to deal with new features / requests from clients; process to deal with incoming bug reports; suggestion of tooling for several scenarios;</li>
 <li>Replaced an old authentication system with Keycloak:</li>
   <ul class="list-bullet fa-ul">
     <li>Fully configurated frontend and backend to communicate with the IAM;</li>
@@ -19,12 +20,11 @@ description: 'Worked in several fronts across the Loxy project:
   </ul>
 <li>Responsible for the communication between hardware and software team;</li>
 <li>Optimized most of the low-level flow related with storing and retrieval of positions, such as reporting;</li>
-<li>Contributed to several aspects in the company workflow, such as: process to deal with new features / requests from clients; process to deal with incoming bug reports; suggestion of tooling for several scenarios;</li>
 <li>Participated in the technical interview for recruiting developers;</li>
 </ul>
 Tech Stack: Java 17, Spring Boot, Spring WebFlux, Redis, Kafka, PostgreSQL, Kubernetes, Keycloak / Zitadel, Git'
 image_path: "assets/images/work/loxy.jpg"
-website: "https://loxy.cloud
+website: "https://loxy.cloud"
 location: "Full Remote from Lausanne, Switzerland"
 date_string: "October 2022 - Current"
 positions: 
