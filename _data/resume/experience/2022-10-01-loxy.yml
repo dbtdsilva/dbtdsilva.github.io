@@ -1,4 +1,4 @@
-institution: "Satcom International"
+institution: "LOXY"
 order: 1
 date: 2022-10-01 00:00:00 +0100
 categories: ["experience"]
@@ -22,12 +22,15 @@ description: 'Worked in several fronts across the Loxy project:
 <li>Contributed to several aspects in the company workflow, such as: process to deal with new features / requests from clients; process to deal with incoming bug reports; suggestion of tooling for several scenarios;</li>
 <li>Participated in the technical interview for recruiting developers;</li>
 </ul>
-Tech Stack: Java 11 / 17, Spring Boot, Spring WebFlux, Redis, Kafka, PostgreSQL, Kubernetes, Keycloak / Zitadel, Git'
-image_path: "assets/images/work/satcom.png"
-website: "https://satcom-int.com/"
+Tech Stack: Java 17, Spring Boot, Spring WebFlux, Redis, Kafka, PostgreSQL, Kubernetes, Keycloak / Zitadel, Git'
+image_path: "assets/images/work/loxy.jpg"
+website: "https://loxy.cloud
 location: "Full Remote from Lausanne, Switzerland"
 date_string: "October 2022 - Current"
 positions: 
   - title: "Senior Software Development Engineer"
     start: 2022-10-01
+    end: 2024-05-31
+  - title: "Lead Software Development Engineer"
+    start: 2024-06-01
     end: Current
