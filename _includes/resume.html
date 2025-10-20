@@ -1,7 +1,7 @@
 <section id="resume" class="section-padding">
     <div class="container">
         <h2 class="section-title">Story about my journey</h2>
-        {% for cat_item in site.data.resume %}
+        {% for cat_item in site.data.resume reversed %}
         {% assign category = cat_item[0] %}
         <div>
             <h2 class="text-center" style="margin: 40px 0"><i>{{ category | capitalize }}</i></h2>
