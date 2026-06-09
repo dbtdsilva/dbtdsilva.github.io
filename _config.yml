@@ -21,7 +21,7 @@ url: "https://dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva
 github_username:  dbtdsilva
 phone_number: "REDACTED"
-cloudflare_analytics_token: "" # Cloudflare Web Analytics beacon token — Cloudflare dashboard -> Analytics & Logs -> Web Analytics -> your site -> "Manage site" -> copy the token from the JS snippet.
+cloudflare_analytics_token: "b5ee31fd1cf44bacb275ce5e8a01590d" # Cloudflare Web Analytics beacon token (public, not a secret).
 
 # Build settings
 markdown: kramdown
