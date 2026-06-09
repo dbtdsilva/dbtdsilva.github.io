@@ -6,7 +6,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 # Permissions needed to deploy to GitHub Pages
