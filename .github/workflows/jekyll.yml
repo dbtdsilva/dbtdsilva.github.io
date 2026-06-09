@@ -31,15 +31,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: false   # we add the Linux platform to the lock before installing
-
-      # The committed Gemfile.lock is generated on Windows (x64-mingw-ucrt only), so the
-      # Linux runner must add its own platform before Bundler will install. This resolves
-      # the Linux gem variants at build time without rewriting the committed lockfile.
-      - name: Install gems
-        run: |
-          bundle lock --add-platform x86_64-linux
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true   # Gemfile.lock is cross-platform (x86_64-linux + windows)
 
       - name: Setup Pages
         id: pages
