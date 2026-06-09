@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Diogo Silva | Resume, Works, Experience
 email: dbtdsilva@gmail.com
-description: This page contains several works and the resume from Diogo Silva who is a final year student pursuing MSc Computer and Telematics Engineering at UA (Portugal)
+description: "Diogo Silva — Lead Software Development Engineer based in Switzerland, working with Java, Spring, Kafka and Kubernetes. Resume, projects and experience."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva

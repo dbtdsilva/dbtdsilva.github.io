@@ -5,7 +5,6 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ site.description | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="keywords" content="onepage, resume, dbtds, dsilva, dbtdsilva, dbtdsilva@gmail.com, ua, Diogo, Silva">
   <meta name="author" content="Diogo Bastos Tavares da Silva">
 
   <style>
@@ -45,7 +44,28 @@
   {% assign full_base_url = custom_url | default: site.github.url %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
-  
+
+  {% capture social_title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+  {% assign social_image = '/assets/images/personal/me.jpg' | prepend: full_base_url %}
+  {% assign social_desc = site.description | normalize_whitespace | truncate: 200 %}
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ social_title | strip | escape }}">
+  <meta property="og:description" content="{{ social_desc | escape }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
+  <meta property="og:image" content="{{ social_image }}">
+  <meta property="og:image:width" content="593">
+  <meta property="og:image:height" content="593">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ social_title | strip | escape }}">
+  <meta name="twitter:description" content="{{ social_desc | escape }}">
+  <meta name="twitter:image" content="{{ social_image }}">
+  {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
   <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
   <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
