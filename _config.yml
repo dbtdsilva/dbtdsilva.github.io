@@ -21,7 +21,7 @@ url: "https://dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva
 github_username:  dbtdsilva
 phone_number: "REDACTED"
-google_analytics: "UA-85172556-1"
+google_analytics: "G-XXXXXXXXXX" # GA4 Measurement ID — replace with the real ID from GA4 Admin -> Data Streams. (Old UA property stopped collecting on 2023-07-01.)
 
 # Build settings
 markdown: kramdown
