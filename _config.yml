@@ -20,7 +20,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dsilva.pt" # the base hostname & protocol for your site
 twitter_username: dbtdsilva
 github_username:  dbtdsilva
-phone_number: "REDACTED"
 cloudflare_analytics_token: "b5ee31fd1cf44bacb275ce5e8a01590d" # Cloudflare Web Analytics beacon token (public, not a secret).
 
 # Build settings
