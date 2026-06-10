@@ -25,5 +25,10 @@ cloudflare_analytics_token: "b5ee31fd1cf44bacb275ce5e8a01590d" # Cloudflare Web 
 markdown: kramdown
 #theme: minima
 
+# Source files for the wordcloud generator app — keep out of the published site.
+exclude:
+  - wordcloud.csv
+  - wordcloud.wcld2
+
 plugins:
   - jekyll-minifier
