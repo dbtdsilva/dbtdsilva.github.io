@@ -171,7 +171,7 @@ ul.list-bullet {
     padding: 60px 0 60px;
 }
 .section-image {
-    padding: 30px;
+    padding: 0;
 }
 .section-title {
     margin-bottom: 50px;
@@ -424,6 +424,10 @@ ul.list-bullet {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+}
+.tf-bg-overlay {
+    background: rgba(26, 30, 35, 0.75);
+    padding: 30px;
 }
 .cloud-img {
     width: 70%;
