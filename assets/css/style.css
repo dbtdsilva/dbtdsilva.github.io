@@ -278,7 +278,6 @@ ul.list-bullet {
     z-index: 0;
 }
 .header {
-    border-bottom: 1px solid #eee;
     position: relative;
     width: 100%;
     z-index: 998;
