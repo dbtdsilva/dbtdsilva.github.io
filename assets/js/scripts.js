@@ -19,17 +19,6 @@ jQuery(function($) {
         $(window).on('load', hidePreloader);
     }
 
-    $(".modal-link").click(function() {
-        var modals = $(".modal-custom");
-        for (var i = 0; i < modals.length; i++) {
-            if (this.href.indexOf(modals[i].id) != -1) {
-                console.log(modals[i].id);
-                console.log($("#" + modals[i].id).find('img'));
-                $("#" + modals[i].id).find('img').trigger("modal-activation");
-            }
-        }
-    });
-
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
@@ -91,29 +80,6 @@ jQuery(function($) {
     }());
 
     // -------------------------------------------------------------
-    // Shuffle
-    // -------------------------------------------------------------
-
-    (function() {
-
-        var $grid = $('#grid');
-
-        $grid.shuffle({
-            itemSelector: '.portfolio-item'
-        });
-
-        $('#filter a').click(function(e) {
-            e.preventDefault();
-            $('#filter a').removeClass('active');
-            $(this).addClass('active');
-            var groupName = $(this).attr('data-group');
-            $grid.shuffle('shuffle', groupName);
-        });
-
-
-    }());
-
-    // -------------------------------------------------------------
     // WOW JS
     // -------------------------------------------------------------
 
@@ -158,30 +124,4 @@ jQuery(function($) {
 
     });
 
-    function getScrollBarWidth () {
-        var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
-            widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
-        $outer.remove();
-        return 100 - widthWithScroll;
-    };
-
-
-    // Inline popups
-    $('#grid').magnificPopup({
-        delegate: 'a.modal-link',
-        removalDelay: 250, //delay removal by X to allow out-animation
-        callbacks: {
-            open: function() {
-                $('.scroll-up-page').css('padding-right', getScrollBarWidth() + "px");
-                $('header').css('padding-right', getScrollBarWidth() + "px");
-            },
-            close: function() {
-                $('.scroll-up-page').css('padding-right', 0);
-                $('header').css('padding-right', 0);
-            },
-            beforeOpen: function() {
-                this.st.mainClass = this.st.el.attr('data-effect');
-            }
-        },
-    });
 });
