@@ -6,10 +6,18 @@ jQuery(function($) {
      * Preloader (ready/onload)
     /* ---------------------------------------------- */
 
-    $(window).load(function() {
+    function hidePreloader() {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(300).fadeOut('slow');
-    });
+    }
+
+    // jQuery 3 fires ready callbacks asynchronously, so window "load" may have
+    // already happened by the time this code runs (e.g. fully cached page).
+    if (document.readyState === 'complete') {
+        hidePreloader();
+    } else {
+        $(window).on('load', hidePreloader);
+    }
 
     $(".modal-link").click(function() {
         var modals = $(".modal-custom");
@@ -27,7 +35,7 @@ jQuery(function($) {
     // -------------------------------------------------------------
 
     (function() {
-        $('a[href*=#]').bind("click", function(e) {
+        $('a[href*="#"]').on("click", function(e) {
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top
@@ -57,7 +65,8 @@ jQuery(function($) {
 
     (function() {
         $('.header').sticky({
-            topSpacing: 0
+            topSpacing: 0,
+            zIndex: 998 // keep in sync with .header in style.css; sticky.js >=1.0.4 overrides it inline otherwise
         });
 
         $('body').scrollspy({
