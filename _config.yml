@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Diogo Silva | Resume, Works, Experience
-email: dbtdsilva@gmail.com
 description: "Diogo Silva — Lead Software Development Engineer based in Switzerland, working with Java, Spring, Kafka and Kubernetes. Resume, projects and experience."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dsilva.pt" # the base hostname & protocol for your site
@@ -28,7 +27,3 @@ markdown: kramdown
 
 plugins:
   - jekyll-minifier
-
-jekyll-minifier:
-  exclude:
-    - 'feed.xml'

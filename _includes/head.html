@@ -42,7 +42,6 @@
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = custom_url | default: site.github.url %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
 
   {% capture social_title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
   {% assign social_image = '/assets/images/personal/me.jpg' | prepend: full_base_url %}
@@ -65,7 +64,7 @@
   {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link href="assets/css/fonts.css" rel="stylesheet" type="text/css">
   <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
   <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
